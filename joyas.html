@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Alta Joyería — PHANTOM LUXE</title>
+    <meta name="description" content="Descubre la colección de alta joyería PHANTOM LUXE: anillos, collares, pendientes y brazaletes en oro 18k, platino y piedras preciosas." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@200;300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .sharp-edges {
+            border-radius: 0px !important;
+        }
+
+        .font-noto {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#dadada",
+                        "inverse-surface": "#2f3131",
+                        "secondary": "#735c00",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-container": "#838484",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#fed65b",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "primary": "#000000",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#474747",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-fixed": "#e3e2e2",
+                        "secondary-fixed": "#ffe088",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#5e5e5e",
+                        "surface": "#f9f9f9",
+                        "on-secondary-fixed": "#241a00",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-container": "#1b1b1b",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-background": "#1a1c1c",
+                        "surface-container-low": "#f3f3f3",
+                        "outline-variant": "#cfc4c5",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#1a1c1c",
+                        "on-primary-container": "#848484",
+                        "surface-variant": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "secondary-fixed-dim": "#e9c349",
+                        "outline": "#7e7576",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary-container": "#745c00"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 sharp-edges bg-white/80 dark:bg-black/80 backdrop-blur-xl shadow-[0_24px_48px_rgba(0,0,0,0.04)] dark:shadow-none">
+        <nav class="flex justify-between items-center w-full px-12 h-20">
+            <!-- Brand Logo -->
+            <div class="text-2xl font-light tracking-[0.3em] text-neutral-950 dark:text-white font-noto">
+                PHANTOM
+            </div>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-10">
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors font-manrope uppercase tracking-[0.1em] text-[11px]"
+                    href="#">Relojes</a>
+                <a class="text-neutral-950 dark:text-white border-b border-yellow-700/50 pb-1 font-manrope uppercase tracking-[0.1em] text-[11px]"
+                    href="#">Joyas</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors font-manrope uppercase tracking-[0.1em] text-[11px]"
+                    href="#">Smartwatches</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors font-manrope uppercase tracking-[0.1em] text-[11px]"
+                    href="#">Regalos</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors font-manrope uppercase tracking-[0.1em] text-[11px]"
+                    href="#">Novedades</a>
+            </div>
+            <!-- Trailing Icon Actions -->
+            <div class="flex items-center space-x-6 text-neutral-900 dark:text-neutral-50">
+                <button class="hover:opacity-70 transition-opacity duration-300" aria-label="Buscar productos">
+                    <span class="material-symbols-outlined" data-icon="search">search</span>
+                </button>
+                <button class="hover:opacity-70 transition-opacity duration-300" aria-label="Mi cuenta">
+                    <span class="material-symbols-outlined" data-icon="person">person</span>
+                </button>
+                <button class="hover:opacity-70 transition-opacity duration-300" aria-label="Lista de favoritos">
+                    <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                </button>
+                <button class="hover:opacity-70 transition-opacity duration-300" aria-label="Carrito de compra">
+                    <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Banner Section -->
+        <section
+            class="relative h-[614px] w-full flex items-center justify-center overflow-hidden bg-surface-container">
+            <div class="absolute inset-0 z-0">
+                <img alt="Alta Joyería Banner" class="w-full h-full object-cover opacity-60"
+                    data-alt="Close up of luxury gold diamond necklaces on silk background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt3K_MiqQDGDpl7fWCJr4V3jb71ceMCMjv82yxnbScxZdvBnK5Dufc61q9jXktdsdrUwbLsJtOdeENHXu69W0KVepfn5uT7ll6KO-LuSvOrFintSXSPnMrpvGxtRRWLz-qn-I9MC245l3m4THdr6XcH1WpsNdHQRkrcoKgbfovUmGDeIX--O0Z0R9BdOwsGMriMDBB4uMEOQvbDj8Kk7oSo0Ex2wq0Yq_TW1TO8TFGyWA3FpKrmrTJmSw-nx4Rrq1vWl4YYSWMfBE" />
+            </div>
+            <div class="relative z-10 text-center max-w-4xl px-6">
+                <h1 class="text-5xl md:text-7xl font-light tracking-tight text-primary font-headline mb-4">Alta Joyería:
+                    Brillo Eterno</h1>
+                <p class="text-sm md:text-base uppercase tracking-[0.2em] font-manrope text-on-surface/70">Artesanía
+                    milenaria para la mujer contemporánea</p>
+            </div>
+        </section>
+        <!-- Main Content Area: Filters + Grid -->
+        <div class="max-w-[1600px] mx-auto px-12 py-24 flex flex-col md:flex-row gap-16">
+            <!-- Sidebar Filters -->
+            <aside class="w-full md:w-64 shrink-0">
+                <div class="sticky top-32 space-y-12">
+                    <div>
+                        <h3 class="font-manrope text-[10px] tracking-widest uppercase text-on-surface/40 mb-6">Filtrar
+                            por</h3>
+                        <!-- Material Filter -->
+                        <div class="mb-10">
+                            <h4 class="font-manrope text-[11px] tracking-widest uppercase font-semibold mb-4">Material
+                            </h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                        <div
+                                            class="w-2 h-2 bg-primary opacity-0 transition-opacity group-aria-checked:opacity-100">
+                                        </div>
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">ORO
+                                        18K</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">PLATINO</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">ORO
+                                        ROSA</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Stone Filter -->
+                        <div class="mb-10">
+                            <h4 class="font-manrope text-[11px] tracking-widest uppercase font-semibold mb-4">Piedra
+                            </h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">DIAMANTE</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">ZAFIRO</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">ESMERALDA</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Price Filter -->
+                        <div class="mb-10">
+                            <h4 class="font-manrope text-[11px] tracking-widest uppercase font-semibold mb-4">Precio
+                            </h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">BAJO
+                                        5.000€</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">5.000€
+                                        - 15.000€</span>
+                                </label>
+                                <label class="flex items-center group cursor-pointer">
+                                    <div
+                                        class="w-4 h-4 border border-outline-variant group-hover:border-primary transition-colors flex items-center justify-center mr-3">
+                                    </div>
+                                    <span
+                                        class="font-manrope text-xs tracking-wider text-on-surface/70 group-hover:text-primary">SOBRE
+                                        15.000€</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!-- Product Grid -->
+            <section class="flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+                    <!-- Product Card 1 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Anillo Solitario"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Luxury diamond solitaire ring on velvet display"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQQlQFnA3f1Q-k_4uRmA2Ve8iawsWN3Q_Ini2VW4Dfcuf2o3efoCU3K2PwmtXNgZGFyUPfkDr8NfALlnpKO-G4TiGeoFz7x3DBbTbN1k71QSe40p76WzIqKZ-q-CARsPn47ag5j2kkouequd_IlkmCT-Nwamv2dOBE-mlhirT1q45V0fbVvBUNAaU52n1lfJ-9FUMASjnDpEWHlvAqcCWYoF0LbQfDmEEc4luuK3IeOd6wv45nm0GKfYr2QsOGjKylwph6CQmMNsE" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Solitario Éclat</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Oro 18k ·
+                                Diamantes 2ct</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">12.450 €</p>
+                        </div>
+                    </article>
+                    <!-- Product Card 2 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Collar de Perlas"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Elegant pearl necklace with gold clasp"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfJINFqOz-8fACWVR5jt15Mt_5CjhP1AEk8U3RpGiXK_ZJerYcynXHf3uOHhTHAPs4maePYQ1z6Pu-XKaXTRm4luzkGJYVcSQlIlGj82BJjBXXqxAm3ZxdEEy8dPsGRAjugDJe_8nPU_iKRp3lImGPEVBMOQlYIBFQyLwpZMjxG1Bdohtfc6K5g7QVha3AC8UF9Ifx-A4tgPWwpuklp8sauDr2mx6BnhYydKijzAyYwNyEVxRS2F46-x3NX09Jm8ffiSKpSaVrSfc" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Collar Heritage</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Oro 18k ·
+                                Perlas del Mar del Sur</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">8.900 €</p>
+                        </div>
+                    </article>
+                    <!-- Product Card 3 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Pendientes Diamante"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Luxury diamond drop earrings shimmering in light"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxYQPwaV0jKYUnzt1P_TSDJRibLwsbwxeFdZ5SWbzEnwWyuYmStkvwY0EAYzKxqdQNlEq2XWZIUNd0FKSJSG1Tc9096KMqvKVMFEx02hbsXe2L5HR4Q-_qFAt7RrKb_gNQ51CRSTSTsaXE2CntBz21JkMIAjNcEmyjaOtdr1Te7cqatmUSjIh06W_CezBLe1KfLgMR7-yTUEawM0pk0zmPnnEX3HsmP7bOcZ-_31Z1yBhNxrDDsHCxviLswDbAsKjdlBImzCaaIIw" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Pendientes Aurora</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Platino ·
+                                Diamantes talla Brillante</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">15.200 €</p>
+                        </div>
+                    </article>
+                    <!-- Product Card 4 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Brazalete de Oro"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Minimalist heavy gold bangle bracelet"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfvngteaUuLgXRaeV2td7bsi_5YuWpCZmh_X-4ZeNUkIM-qC2HcHY9S_eN03eYb2l4rXk36pTzmwkWxGQHTdKB7V5YBHmn6fvl3P3PKYAcWB_ZbKi54IpAYiHi3RRBHXZGPRfh3acYZbmyBiL4ERRBHViqXvm9eX-CxKdAqhoEwfvZ2SjEGwVG1v3SLIwvnFQ5xMHExuBB9TOJFWN_rIUe8IQJ15gCEkkRY_Zh3668d7p3pd_f4DT1gZEeeC4W6CCYI-e0oP-5MBI" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Brazalete Eternal</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Oro 18k
+                                Macizo</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">6.500 €</p>
+                        </div>
+                    </article>
+                    <!-- Product Card 5 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Anillo Zafiro"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="Deep blue sapphire ring surrounded by diamonds"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyUOhDufJmt-ednUrz6qZP4TByaZwkKwK2ojlct9_R7NZ4UYc4bLucyMx1pBpyarDkFknq9PBnH5bF4otYSqrSN7i1P2NmDaXrbGIKQKRv9KEwI-xckl9IrbWuZHr3y5_MU-L4C3Yhl1z5QvFdIAJUQ37SoVArywTz7akFsCtdu5pz79QGZ84U1OVzhTV3kkI09j0JkAd0r9bxYvt9DF_PehjTebLRKPfJImXl1v7GNV4JKb1E6sRTyDRcsXIgVv8hFj6wqAhVDfk" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Anillo Royal Blue</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Oro Blanco
+                                · Zafiro Ceilán</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">21.000 €</p>
+                        </div>
+                    </article>
+                    <!-- Product Card 6 -->
+                    <article class="group">
+                        <div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+                            <img alt="Gargantilla Diamantes"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="High jewelry diamond choker necklace"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZvEcm1C0XvUciKEv4YV6JPzmF0GCXEkqrNUNEyuU4l0GkpX-tyW6uC9h1zxsIHdmdQYgHiSQgwWaYnvAHOi6HmTEPMv2mJcntci9MiXB8FZSerCAiIxTDDQaDzo2ci8UF-BsRJZJKazoF-WmJybMINgPc8WHFLmkGUw7PcDEu5tHKaq-Ub6-K0KjMJR79hfNECv0VLCeZAHZXBDwmzCAlMpcm4j_oWJTOhBh-W0_U2VA1dEnR-a7lBJLQnKMn03w5P8ksv2eb6rg" />
+                            <button
+                                class="absolute top-4 right-4 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity">
+                                <span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            </button>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="font-headline text-lg text-primary tracking-tight">Gargantilla Stellar</h3>
+                            <p class="font-manrope text-[10px] tracking-[0.2em] uppercase text-on-surface/50">Oro 18k ·
+                                Pavé de Diamantes</p>
+                            <p class="font-manrope text-sm tracking-widest text-secondary pt-2">34.600 €</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Load More / Pagination -->
+                <div class="mt-24 text-center">
+                    <button
+                        class="bg-primary text-on-primary font-manrope text-[11px] tracking-[0.2em] uppercase px-12 py-5 hover:opacity-90 transition-opacity">
+                        Cargar más tesoros
+                    </button>
+                    <div class="mt-8 h-[1px] w-full bg-outline-variant/30 relative">
+                        <div class="absolute inset-0 w-1/3 bg-primary"></div>
+                    </div>
+                    <p class="mt-4 font-manrope text-[10px] uppercase tracking-widest text-on-surface/40">Viendo 6 de 24
+                        piezas exclusivas</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full sharp-edges mt-20 bg-neutral-100 dark:bg-neutral-900">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-full">
+            <!-- Brand Info -->
+            <div class="space-y-6">
+                <div class="text-lg font-light tracking-[0.2em] text-neutral-900 dark:text-neutral-50 font-noto">PHANTOM
+                    LUXE</div>
+                <p class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 leading-relaxed">
+                    La excelencia en alta relojería y joyería desde 1924. Tradición, precisión y exclusividad en cada
+                    pieza.
+                </p>
+            </div>
+            <!-- Links Column 1 -->
+            <div class="flex flex-col space-y-4">
+                <h4
+                    class="font-manrope text-[10px] tracking-[0.2em] uppercase font-bold text-neutral-900 dark:text-neutral-50">
+                    Servicios</h4>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Shipping</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Warranty</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Secure Payment</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Flexible Returns</a>
+            </div>
+            <!-- Links Column 2 -->
+            <div class="flex flex-col space-y-4">
+                <h4
+                    class="font-manrope text-[10px] tracking-[0.2em] uppercase font-bold text-neutral-900 dark:text-neutral-50">
+                    Explorar</h4>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Customer Support</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Explore</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Newsletter</a>
+                <a class="font-manrope text-[10px] tracking-widest uppercase text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors"
+                    href="#">Legal</a>
+            </div>
+            <!-- Newsletter -->
+            <div class="space-y-6">
+                <h4
+                    class="font-manrope text-[10px] tracking-[0.2em] uppercase font-bold text-neutral-900 dark:text-neutral-50">
+                    Suscribirse</h4>
+                <div class="flex border-b border-outline-variant pb-2">
+                    <input
+                        class="bg-transparent border-none focus:ring-0 w-full font-manrope text-[10px] tracking-widest uppercase"
+                        placeholder="EMAIL@ADDRESS.COM" type="email" />
+                    <button class="text-secondary hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="px-12 py-8 border-t border-outline-variant/10 text-center md:text-left">
+            <span class="font-manrope text-[10px] tracking-widest uppercase text-neutral-400">© 2024 PHANTOM LUXE. ALL
+                RIGHTS RESERVED.</span>
+        </div>
+    </footer>
+</body>
+
+</html>

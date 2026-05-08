@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>PHANTOM LUXE — Alta Relojería y Joyería de Lujo</title>
+    <meta name="description" content="Descubre la colección exclusiva de PHANTOM LUXE: relojes de alta relojería, joyas y smartwatches de lujo. Envíos gratis desde 50€." />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-surface-variant": "#4c4546",
+                        "outline": "#7e7576",
+                        "on-tertiary-container": "#838484",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-background": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#c6c6c6",
+                        "primary-container": "#1b1b1b",
+                        "secondary": "#735c00",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-fixed": "#241a00",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "tertiary-container": "#1a1c1c",
+                        "primary": "#000000",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "secondary-fixed": "#ffe088",
+                        "on-primary-container": "#848484",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#745c00",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-container": "#fed65b",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-fixed": "#e2e2e2",
+                        "background": "#f9f9f9"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .sharp-edges {
+            border-radius: 0px !important;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f9f9f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #000;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+    <!-- 1. TOP BAR -->
+    <div class="w-full bg-primary text-on-primary py-2 overflow-hidden">
+        <div class="flex whitespace-nowrap gap-x-20 px-4">
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] opacity-90 min-w-max">10% en tu primera compra
+                con el código: PHANTOM10</p>
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] opacity-90 min-w-max">Envíos gratis a partir de
+                50€ en toda Europa</p>
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] opacity-90 min-w-max">Nuevas piezas de alta
+                joyería disponibles</p>
+            <!-- Duplicate for pseudo-ticker effect -->
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] opacity-90 min-w-max">10% en tu primera compra
+                con el código: PHANTOM10</p>
+            <p class="font-label text-[10px] uppercase tracking-[0.2em] opacity-90 min-w-max">Envíos gratis a partir de
+                50€ en toda Europa</p>
+        </div>
+    </div>
+    <!-- 2. HEADER (TopAppBar) -->
+    <header
+        class="fixed top-8 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-xl shadow-[0_24px_48px_rgba(0,0,0,0.04)] h-20 flex justify-between items-center px-12">
+        <div class="flex-1 flex gap-x-8 items-center">
+            <nav class="hidden lg:flex gap-x-8">
+                <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-950 border-b border-secondary/50 pb-1"
+                    href="#">Relojes</a>
+                <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
+                    href="#">Joyas</a>
+                <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
+                    href="#">Smartwatches</a>
+                <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
+                    href="#">Regalos</a>
+                <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
+                    href="#">Novedades</a>
+            </nav>
+            <button class="lg:hidden material-symbols-outlined text-neutral-950" aria-label="Abrir menú de navegación">menu</button>
+        </div>
+        <div class="flex-shrink-0 text-center">
+            <h1 class="font-headline text-2xl font-light tracking-[0.3em] text-neutral-950">PHANTOM</h1>
+        </div>
+        <div class="flex-1 flex justify-end items-center gap-x-6">
+            <button class="material-symbols-outlined hover:opacity-70 transition-opacity" aria-label="Buscar productos">search</button>
+            <button class="material-symbols-outlined hover:opacity-70 transition-opacity" aria-label="Mi cuenta">person</button>
+            <button class="material-symbols-outlined hover:opacity-70 transition-opacity" aria-label="Lista de favoritos">favorite</button>
+            <div class="relative group">
+                <button class="material-symbols-outlined hover:opacity-70 transition-opacity" aria-label="Carrito de compra (2 artículos)">shopping_bag</button>
+                <span aria-hidden="true"
+                    class="absolute -top-1 -right-1 bg-secondary text-white text-[8px] px-1.5 py-0.5 rounded-full">2</span>
+            </div>
+        </div>
+    </header>
+    <!-- 3. HERO SECTION -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <div class="absolute inset-0 bg-neutral-900">
+            <img alt="Close up of a luxury mechanical watch showing internal gears" class="w-full h-full object-cover opacity-80"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUdWpOa-D-VLlCZGQ0Aw1lSHDvJbnMW1BMGzc3L60rmEQRMwg8VS5yR2BSZxUoom00SzdwpVWkpJPbbJZ0h21ErsOKArVPDstgjt3ohGLcMDkGY4YV0ITS3iU9tdjLxPFccs_axWiNA21vKasv_h5Is4zVo4wS4-tKuvoxrcGEV7jm7CR8pnFLbeMtna8dnEVaaRsKM307HYIJ4kr30sTAuzs9GNXDK33gC95evkGBDTHg55Zc_wqkkX9H5GKGG5nlaPY8MGxgTOk" />
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="relative h-full flex flex-col items-center justify-center text-center px-6">
+            <span class="text-white font-label text-[12px] uppercase tracking-[0.4em] mb-6 block"
+                data-aos="fade-up">Elite Horology</span>
+            <h2
+                class="font-headline text-5xl md:text-7xl lg:text-8xl text-white tracking-tight leading-[1.1] mb-8 max-w-5xl">
+                PHANTOM: Domina el Tiempo, Marca la Diferencia
+            </h2>
+            <p class="font-body text-neutral-300 text-lg md:text-xl font-light tracking-wide mb-12 max-w-2xl">
+                Exclusividad en cada detalle. Una colección curada para quienes entienden que el tiempo es el lujo
+                definitivo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a class="bg-primary text-on-primary px-10 py-4 font-label text-[11px] uppercase tracking-widest hover:opacity-90 transition-all sharp-edges"
+                    href="#">
+                    Descubrir reloj para Él
+                </a>
+                <a class="border border-white/40 text-white backdrop-blur-sm px-10 py-4 font-label text-[11px] uppercase tracking-widest hover:bg-white hover:text-primary transition-all sharp-edges"
+                    href="#">
+                    Descubrir joyas para Ella
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-4 items-center">
+            <div class="w-16 h-[1px] bg-white"></div>
+            <span class="text-white font-label text-[10px] uppercase tracking-widest">Desliza</span>
+        </div>
+    </section>
+    <main class="mt-20">
+        <!-- 4. CATEGORIES/LATEST NEWS CAROUSEL -->
+        <section class="px-12 py-20 bg-surface">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h3 class="font-headline text-4xl text-neutral-900 mb-2">Últimas Novedades</h3>
+                    <div class="w-24 h-[1px] bg-secondary"></div>
+                </div>
+                <div class="flex gap-4">
+                    <button aria-label="Producto anterior"
+                        class="w-12 h-12 flex items-center justify-center border border-outline-variant hover:bg-neutral-100 transition-colors">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button aria-label="Producto siguiente"
+                        class="w-12 h-12 flex items-center justify-center border border-outline-variant hover:bg-neutral-100 transition-colors">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-8 overflow-x-auto no-scrollbar pb-10">
+                <!-- Product Card 1 -->
+                <div class="min-w-[320px] group flex-shrink-0">
+                    <div class="relative bg-surface-container-low aspect-[3/4] overflow-hidden">
+                        <img alt="Modern stainless steel luxury watch on gray background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfHpdvxUWe5wmq3k8aYQG34WEKiI7FyCbj414Rvb714BQ82kOX909y61oMTTm_9lraAR_nuSN_igizE6457H6udeVARG9Ss6SQsYB_tLVH2VqEY7s5XRI3vuCS2OturUMPH3jRXMjBX80Dc5IWBbge4-1Q_HJu9JHO-1CL6U5OWZ_1PJUGFAXbuju2zrVeq_aHXPB9zgpz_KA3-3DmjMJgkr0zL6s2iysQWKEIekjlank-tku9GxpW6bNYDo8QRpRfNDQZz3SKYLo" />
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-500">
+                        </div>
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 font-label text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Añadir a la bolsa
+                        </button>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-secondary font-semibold mb-1">Acero Noble
+                        </p>
+                        <h4 class="font-headline text-lg text-neutral-900 mb-2">Chronos Phantom Silver</h4>
+                        <p class="font-body text-neutral-500 text-sm">3.450 €</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="min-w-[320px] group flex-shrink-0">
+                    <div class="relative bg-surface-container-low aspect-[3/4] overflow-hidden">
+                        <img alt="Close up of a luxury diamond ring in gold" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2H_SdRzTcFL6j_IHoOdRZjCsbwuBK1dOePi4DwiPRMR0bCdfHpG3RD6NTtuib1Fs1qp8711UeItbLjQ3EqgFKyY56FB33j4TKrY9CVbDpoFoM1LmQr0tHchBxrvFhVgIplKkx6iizMkOO7BN2ic9TIxPxGY1RmWauZqp6WP6Uul51h3wetkztpi8FIdKkS5fNXX44xD3gGG3eoLf28Zsv6vg6_3SG6GcQObzSaoXNW69wkzygHzl5A1Wv-O6lYm6o7DmWK6riovU" />
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-500">
+                        </div>
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 font-label text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Añadir a la bolsa
+                        </button>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-secondary font-semibold mb-1">Oro 18k
+                            &amp; Diamante</p>
+                        <h4 class="font-headline text-lg text-neutral-900 mb-2">Solitario Eternal Grace</h4>
+                        <p class="font-body text-neutral-500 text-sm">12.200 €</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="min-w-[320px] group flex-shrink-0">
+                    <div class="relative bg-surface-container-low aspect-[3/4] overflow-hidden">
+                        <img alt="Minimalist elegant smartwatch on leather strap" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ECZpsdFTqpWisyPzT967bljkg-pfbFeKHzFPkjkJ2_eDhRldQKDYd5EAOUy9OTfVJw9dauq44MNGu0-P6lODUYIcruUKA6784oNzeozHsBy4lqSb1kJ1QqCdyUV169vcnU8z7b5iKYFeayOPc3Ni95Pb5tA-oIhBNd3LCl8226dtWiQL_y18FVeev3KliZZNeEcDpA-6_M9rQNHTWQhYC_kcpPGbSUSvYBSxym1ZpeLrCvxWcuaxSJkAuzv7gSZp5v1jdaaRPrk" />
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-500">
+                        </div>
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 font-label text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Añadir a la bolsa
+                        </button>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-secondary font-semibold mb-1">Titanio
+                            &amp; Cuero</p>
+                        <h4 class="font-headline text-lg text-neutral-900 mb-2">Smart Phantom Series X</h4>
+                        <p class="font-body text-neutral-500 text-sm">890 €</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="min-w-[320px] group flex-shrink-0">
+                    <div class="relative bg-surface-container-low aspect-[3/4] overflow-hidden">
+                        <img alt="Luxury jewelry necklace with sapphire pendant" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDNnSR7qDDvzzGxqzZ1UUnZUOUkeTwVs61JvY4BUnpGNm-sAA8l_t1y91qjybV-GeWsHEUivC0WJr_LqLtd6KLqblvg8Rp5r76VhGOUcfEKdjP09XMkbzBwzaIyRlIkE8iWlCWzpRKCBnfogYJ_jMcvnX4DpcyODHmSGtSc1ozNf9tA8WYYH46ilDE7_NmynNSjElZx8YpmLivYH5F_L1uqxGIOqLTXoTpbjlSHIi1d8Vpr0aGgygK9WX-ZwL9tg1lQddaTBtXnU" />
+                        <div class="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors duration-500">
+                        </div>
+                        <button
+                            class="absolute bottom-0 left-0 w-full bg-primary text-on-primary py-4 font-label text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                            Añadir a la bolsa
+                        </button>
+                    </div>
+                    <div class="mt-6">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-secondary font-semibold mb-1">Platino
+                            &amp; Zafiro</p>
+                        <h4 class="font-headline text-lg text-neutral-900 mb-2">Collar Ocean Whisper</h4>
+                        <p class="font-body text-neutral-500 text-sm">18.500 €</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-outline-variant/30 h-[1px] mt-10">
+                <div class="w-1/4 h-full bg-primary"></div>
+            </div>
+        </section>
+        <!-- 5. PROMO BANNERS -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
+            <div class="relative h-[819px] group overflow-hidden bg-surface-container">
+                <img alt="Elegant woman wearing multiple luxury bracelets and rings" class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjo19F3R3Bg3EyHLc11eDwk5iFhaZUq2CzU_XV6tLJBzTkm2yMFn8_MGQ3Y4owfEAGuHDaNENgDnzU5r5feCO07E8rrxgEJ_zaA5BNSwQZSyPSQIITL_zHNrk93ta5kBcXJAC_DVLJvAlQyWuKVftcEoCprdg1CnrW1WmMRnJk6DrJlaK5w7ULA4X_Zh4qUwlTAZwbdXs1guA31YquQAHEYBuLBHQl_ue_Fi662L-H2lHv6K6I3nkXm3mZ5CBe82iicwdoDo4SWl8" />
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-700"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-12 md:p-20">
+                    <h3 class="font-headline text-4xl text-white mb-6">Joyas y accesorios perfectos para ella</h3>
+                    <a class="inline-block w-fit text-white font-label text-[11px] uppercase tracking-widest border-b border-white pb-2 hover:text-secondary hover:border-secondary transition-colors"
+                        href="#">
+                        Ver Colección
+                    </a>
+                </div>
+            </div>
+            <div class="relative h-[819px] group overflow-hidden bg-surface-container">
+                <img alt="Detail shot of a man adjusting his watch in a suit" class="w-full h-full object-cover transition-transform duration-[2000ms] group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4bF6xKWDISYlTQXja6hrqp5QE6DkdqmItCEFhZFSgXMMSKuO2x7LdDX0CyrUvJGRMjQw-ce0xPPc78ja3K7V9k7eBjk9IKVHah0hvKxJg_v71Jw_cIaOapBzjVqvtQJDI32HUEwSdkqogjv1GFzmZm0ZOCCY23nmnjyQH23AreyifTcQCAwFb3Bdk7nvHjzBrWMO69vxnxa2p-v6IxrUY3IrE1iVelw1EIwIStwG3MnAgEiabnG9MVvj9ezwiDjlfoXoL9J2Fwnw" />
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-700"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-12 md:p-20">
+                    <h3 class="font-headline text-4xl text-white mb-6">La elegancia en tu muñeca</h3>
+                    <a class="inline-block w-fit text-white font-label text-[11px] uppercase tracking-widest border-b border-white pb-2 hover:text-secondary hover:border-secondary transition-colors"
+                        href="#">
+                        Ver Colección
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- 6. BEST SELLERS -->
+        <section class="px-12 py-32 bg-white">
+            <div class="text-center mb-20">
+                <h3 class="font-headline text-5xl text-neutral-900 mb-6">Iconos de PHANTOM</h3>
+                <p class="font-body text-neutral-500 max-w-xl mx-auto uppercase tracking-widest text-xs">Nuestros
+                    modelos más deseados, curados por expertos.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+                <!-- Best Seller 1 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-surface-container-low aspect-square p-8 mb-6 flex items-center justify-center relative overflow-hidden">
+                        <img alt="Black minimalist automatic watch on white background" class="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX62L88eskz2-peiEfD1L1dI6Sx1U_NrH4__zhpzo5nClvnPKoGtyBqXpuQOzdtG38vtK2nEw0hGgaKlSwSW3YoJV5pH02KbApx9YslVOcsVbHVyub9EVorDgLt8sG933wU0T32fr_czYzQ_b3bOunkF1QnzJAi8TKZ3de9aKFpTcw2GpaQ0ZcLk5EvhhWCXX-ICYlRbR-9FkK40Z-YaheMvo18-i8va4RF-Cqpn_N36jWkT20E7oHJiaoCsWpZMCHCb8gGfHJrKQ" />
+                    </div>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-neutral-400 mb-1">Edición Limitada</p>
+                    <h4 class="font-headline text-md text-neutral-900 uppercase tracking-tighter">Black Phantom Nocturne
+                    </h4>
+                    <p class="font-body text-neutral-800 font-medium mt-2">5.200 €</p>
+                </div>
+                <!-- Best Seller 2 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-surface-container-low aspect-square p-8 mb-6 flex items-center justify-center relative overflow-hidden">
+                        <img alt="Gold watch on wrist with elegant outfit" class="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzKrFbO7vrg59F8r8K31G1-uwb8ZdjHNIuO-UgsVu1JXLM86qAKYS1n-Q8wFdGzFUVTqHd3NuimWt8EgM3zvcd6aYLbwYdEQwjxtMZT-1y53pyExsmTw3FHJyrxC23RRjFPcgxpmMfpud6Y2yXtETMVkZiv7C0hsILLiDeoEs_LM7DvGeqhPKsQTrXooabu3kK3Ao2HS1AGgavzhpVdImA7H6ianoVC8Db9v_PaDh1MiVhLAKEtV8enHrPrjh1CUA44MTZUsYwStI" />
+                    </div>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-neutral-400 mb-1">Tradición</p>
+                    <h4 class="font-headline text-md text-neutral-900 uppercase tracking-tighter">Heritage Gold 42mm
+                    </h4>
+                    <p class="font-body text-neutral-800 font-medium mt-2">8.900 €</p>
+                </div>
+                <!-- Best Seller 3 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-surface-container-low aspect-square p-8 mb-6 flex items-center justify-center relative overflow-hidden">
+                        <img alt="Rose gold earrings with pearls" class="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEkyzzTEdtNjQRd-b5gtbkEMiqfUD8KKO5Di4vX4b2pBfGVb6-M7Hle2roAPsRgznwhabutAEUbEHO135Go__4t6PeLyCVs_7Pv0ESRh4h6o8QBvOq-NL2976PWrrCY6k_p-UNOd-X6Xg0z-GPAhvUlpkmaMqcxAkOQHBN0RdLy7h5E4UgeH84hhp9dI_w2ch189PTY0pEWeE507_Od3GROh0_U_KrBRvhPsEpftUNO0rNSdD27R8IyzLvuFMUVjwdpCPixC661-M" />
+                    </div>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-neutral-400 mb-1">Atemporal</p>
+                    <h4 class="font-headline text-md text-neutral-900 uppercase tracking-tighter">Pendientes Pearl Drop
+                    </h4>
+                    <p class="font-body text-neutral-800 font-medium mt-2">1.450 €</p>
+                </div>
+                <!-- Best Seller 4 -->
+                <div class="group cursor-pointer">
+                    <div
+                        class="bg-surface-container-low aspect-square p-8 mb-6 flex items-center justify-center relative overflow-hidden">
+                        <img alt="Vintage style watch dial with leather strap" class="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBovs8PzpPR5SSBfUsuP2L49K1FiDDYnDeX_BfB4maSie_8XcwYUryOfoMFq_cV5athxA0taWLP8KioReV-vKjS8tBuzAkOSR7sGSMNIX7TNoawHxqXN4plTP_LyadMDVJNlEOXFjmgn6cvmjpu4nRWpKaBBcBuBg60Xg0qnsgwJV7QqpDolwRATtd3V_qVhq4jjNTYIFazYBm-mtOew_CqTwW5E3L8MwVbRtIvIcVEkgDKWN4ofcDeN68kvlD_Q6K-LymllM37yjQ" />
+                    </div>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-neutral-400 mb-1">Clásico</p>
+                    <h4 class="font-headline text-md text-neutral-900 uppercase tracking-tighter">Executive Leather
+                        Brown</h4>
+                    <p class="font-body text-neutral-800 font-medium mt-2">2.100 €</p>
+                </div>
+            </div>
+        </section>
+        <!-- 7. TRUST BADGES -->
+        <section class="bg-surface-container-low px-12 py-16">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-4">local_shipping</span>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-bold mb-1">Envío Gratis desde 50€
+                    </h5>
+                    <p class="text-[9px] text-neutral-500 uppercase tracking-tighter leading-relaxed">Entrega express
+                        asegurada</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-4">verified</span>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-bold mb-1">3 Años de Garantía</h5>
+                    <p class="text-[9px] text-neutral-500 uppercase tracking-tighter leading-relaxed">Certificado de
+                        autenticidad</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-4">payments</span>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-bold mb-1">Pago Seguro y a Plazos
+                    </h5>
+                    <p class="text-[9px] text-neutral-500 uppercase tracking-tighter leading-relaxed">Opciones de
+                        financiación</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <span class="material-symbols-outlined text-3xl text-secondary mb-4">assignment_return</span>
+                    <h5 class="font-label text-[10px] uppercase tracking-widest font-bold mb-1">Devoluciones Flexibles
+                    </h5>
+                    <p class="text-[9px] text-neutral-500 uppercase tracking-tighter leading-relaxed">Hasta 30 días de
+                        prueba</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- 8. FOOTER -->
+    <footer
+        class="bg-neutral-100 text-neutral-900 font-label text-[10px] tracking-widest uppercase w-full sharp-edges mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-full">
+            <!-- Col 1 -->
+            <div>
+                <h6 class="font-headline text-lg font-light tracking-[0.2em] mb-8">PHANTOM LUXE</h6>
+                <p class="normal-case tracking-normal mb-8 leading-relaxed text-neutral-500">
+                    Nuestra historia comenzó con la pasión por la precisión técnica y el diseño atemporal. Hoy, somos el
+                    destino predilecto para coleccionistas.
+                </p>
+                <div class="flex flex-col gap-4">
+                    <p class="mb-2">Descarga nuestra App</p>
+                    <div class="flex gap-4">
+                        <div
+                            class="w-28 h-8 bg-neutral-900 flex items-center justify-center text-white text-[8px] cursor-pointer hover:opacity-80 transition-opacity">
+                            APP STORE</div>
+                        <div
+                            class="w-28 h-8 bg-neutral-900 flex items-center justify-center text-white text-[8px] cursor-pointer hover:opacity-80 transition-opacity">
+                            GOOGLE PLAY</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Col 2 -->
+            <div class="flex flex-col gap-4">
+                <h6 class="font-bold mb-4 text-neutral-950">Atención al Cliente</h6>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Preguntas Frecuentes</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Guía de Tallas</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Información de Envíos</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Formulario de Contacto</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Localizador de
+                    Boutiques</a>
+            </div>
+            <!-- Col 3 -->
+            <div class="flex flex-col gap-4">
+                <h6 class="font-bold mb-4 text-neutral-950">Explorar</h6>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Relojes Hombre</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Relojes Mujer</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Alta Joyería</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Colección Smartwatch</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Servicio de
+                    Personalización</a>
+            </div>
+            <!-- Col 4 -->
+            <div>
+                <h6 class="font-bold mb-4 text-neutral-950">Newsletter</h6>
+                <p class="normal-case tracking-normal text-neutral-500 mb-6 leading-relaxed">
+                    Suscríbete para recibir noticias exclusivas y un 10% de descuento en tu primera compra.
+                </p>
+                <form class="relative">
+                    <input
+                        class="w-full bg-transparent border-b border-outline-variant py-3 focus:border-neutral-900 outline-none placeholder:text-neutral-400"
+                        placeholder="TU EMAIL" type="email" />
+                    <button
+                        class="absolute right-0 top-1/2 -translate-y-1/2 material-symbols-outlined text-neutral-400 hover:text-neutral-950">arrow_right_alt</button>
+                </form>
+            </div>
+        </div>
+        <div
+            class="px-12 py-10 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex gap-8">
+                <a class="hover:text-neutral-950 transition-colors" href="#">INSTAGRAM</a>
+                <a class="hover:text-neutral-950 transition-colors" href="#">FACEBOOK</a>
+                <a class="hover:text-neutral-950 transition-colors" href="#">YOUTUBE</a>
+                <a class="hover:text-neutral-950 transition-colors" href="#">PINTEREST</a>
+            </div>
+            <p class="text-[9px] text-neutral-400">© 2026 PHANTOM LUXE. ALL RIGHTS RESERVED.</p>
+            <div class="flex gap-6 text-[9px]">
+                <a class="text-neutral-400 hover:text-neutral-950" href="#">Privacidad</a>
+                <a class="text-neutral-400 hover:text-neutral-950" href="#">Cookies</a>
+                <a class="text-neutral-400 hover:text-neutral-950" href="#">Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
