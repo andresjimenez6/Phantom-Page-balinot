@@ -29,3 +29,11 @@
 .vertical-text {
     writing-mode: vertical-rl;
 }
+
+.font-noto {
+    font-family: 'Noto Serif', serif;
+}
+
+.font-manrope {
+    font-family: 'Manrope', sans-serif;
+}
