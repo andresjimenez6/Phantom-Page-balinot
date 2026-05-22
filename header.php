@@ -1,24 +1,49 @@
-﻿    <!-- 2. HEADER (TopAppBar) -->
+<!DOCTYPE html>
+<html class="light" <?php language_attributes(); ?>>
+
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+    <?php wp_head(); ?>
+</head>
+
+<body <?php body_class("bg-surface font-body text-on-surface antialiased overflow-x-hidden selection:bg-secondary/30"); ?>>
+    <!--====================================
+         LAYOUT GLOBAL - Topbar y Navegación
+    =====================================-->
+
+    <?php get_template_part('template-parts/layout/topbar'); ?>
+
+    <!-- 2. HEADER (TopAppBar) -->
     <header id="header"
         class="fixed top-8 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-xl shadow-[0_24px_48px_rgba(0,0,0,0.04)] h-20 flex justify-between items-center px-12">
         <div class="flex-1 flex gap-x-8 items-center">
             <nav class="hidden lg:flex gap-x-8">
                 <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-950 border-b border-secondary/50 pb-1"
-                    href="landing.html">Relojes</a>
+                    href="<?php echo esc_url( home_url( '/' ) ); ?>">Relojes</a>
                 <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
-                    href="joyas.html">Joyas</a>
+                    href="<?php echo esc_url( site_url( '/joyas' ) ); ?>">Joyas</a>
                 <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
-                    href="smartwatches.html">Smartwatches</a>
+                    href="<?php echo esc_url( site_url( '/smartwatches' ) ); ?>">Smartwatches</a>
                 <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
-                    href="Regalos.html">Regalos</a>
+                    href="<?php echo esc_url( site_url( '/regalos' ) ); ?>">Regalos</a>
                 <a class="font-label text-[11px] uppercase tracking-[0.1em] text-neutral-500 hover:text-neutral-800 transition-colors"
-                    href="novedades.html">Novedades</a>
+                    href="<?php echo esc_url( site_url( '/novedades' ) ); ?>">Novedades</a>
             </nav>
             <button class="lg:hidden material-symbols-outlined text-neutral-950"
                 aria-label="Abrir menú de navegación">menu</button>
         </div>
         <div class="flex-shrink-0 text-center">
-            <h1 class="font-headline text-2xl font-light tracking-[0.3em] text-neutral-950">PHANTOM</h1>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <h1 class="font-headline text-2xl font-light tracking-[0.3em] text-neutral-950">PHANTOM</h1>
+            </a>
         </div>
         <div class="flex-1 flex justify-end items-center gap-x-6">
             <button class="material-symbols-outlined hover:opacity-70 transition-opacity"

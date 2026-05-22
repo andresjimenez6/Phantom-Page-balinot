@@ -1,4 +1,4 @@
-﻿    <!-- 8. FOOTER -->
+    <!-- 8. FOOTER -->
     <footer id="footer"
         class="bg-neutral-100 text-neutral-900 font-label text-[10px] tracking-widest uppercase w-full sharp-edges mt-20">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-full">
@@ -34,10 +34,10 @@
             <!-- Col 3 -->
             <div class="flex flex-col gap-4">
                 <h6 class="font-bold mb-4 text-neutral-950">Explorar</h6>
-                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Relojes Hombre</a>
-                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Relojes Mujer</a>
-                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Alta Joyería</a>
-                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Colección Smartwatch</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="<?php echo esc_url( home_url( '/' ) ); ?>">Relojes Hombre</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="<?php echo esc_url( home_url( '/' ) ); ?>">Relojes Mujer</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="<?php echo esc_url( site_url( '/joyas' ) ); ?>">Alta Joyería</a>
+                <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="<?php echo esc_url( site_url( '/smartwatches' ) ); ?>">Colección Smartwatch</a>
                 <a class="text-neutral-500 hover:text-neutral-950 transition-colors" href="#">Servicio de
                     Personalización</a>
             </div>
@@ -64,7 +64,7 @@
                 <a class="hover:text-neutral-950 transition-colors" href="#">YOUTUBE</a>
                 <a class="hover:text-neutral-950 transition-colors" href="#">PINTEREST</a>
             </div>
-            <p class="text-[9px] text-neutral-400">© 2026 PHANTOM LUXE. ALL RIGHTS RESERVED.</p>
+            <p class="text-[9px] text-neutral-400">© <?php echo date('Y'); ?> PHANTOM LUXE. ALL RIGHTS RESERVED.</p>
             <div class="flex gap-6 text-[9px]">
                 <a class="text-neutral-400 hover:text-neutral-950" href="#">Privacidad</a>
                 <a class="text-neutral-400 hover:text-neutral-950" href="#">Cookies</a>
@@ -72,3 +72,7 @@
             </div>
         </div>
     </footer>
+
+    <?php wp_footer(); ?>
+</body>
+</html>
